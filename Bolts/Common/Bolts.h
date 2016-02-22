@@ -26,6 +26,7 @@
 #import <Bolts/BFMeasurementEvent.h>
 #import <Bolts/BFURL.h>
 #import <Bolts/BFWebViewAppLinkResolver.h>
+#import <Bolts/BFURLOpeningHacks.h>
 #endif
 
 NS_ASSUME_NONNULL_BEGIN

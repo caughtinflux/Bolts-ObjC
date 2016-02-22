@@ -166,7 +166,7 @@
 		8E8C8F2917F241FF00E3F1C7 /* TaskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9C3D1C17DE9F6500427E62 /* TaskTests.m */; };
 		8EA6BF691805CF5600337041 /* BoltsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA6BF681805CF5600337041 /* BoltsTests.m */; };
 		8EDDA63017E17DDC00655F8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9C3CEC17DE9DE000427E62 /* Foundation.framework */; };
-		BF760D301C7B74AD00E68921 /* BFURLOpeningHacks.h in Headers */ = {isa = PBXBuildFile; fileRef = BF760D2F1C7B74AD00E68921 /* BFURLOpeningHacks.h */; };
+		BF760D381C7B79AC00E68921 /* BFURLOpeningHacks.h in Headers */ = {isa = PBXBuildFile; fileRef = BF760D371C7B79AC00E68921 /* BFURLOpeningHacks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F5AFC9EC1BA752750076E927 /* BFTaskCompletionSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8103FA5319900A84000BAE3F /* BFTaskCompletionSource.m */; };
 		F5AFC9ED1BA752750076E927 /* BFTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 8103FA5119900A84000BAE3F /* BFTask.m */; };
 		F5AFC9EE1BA752750076E927 /* Bolts.m in Sources */ = {isa = PBXBuildFile; fileRef = 8103FA5519900A84000BAE3F /* Bolts.m */; };
@@ -310,7 +310,7 @@
 		B242FAB919A567660097ECAE /* BFMeasurementEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFMeasurementEvent.m; sourceTree = "<group>"; };
 		B242FABA19A567660097ECAE /* BFURL_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFURL_Internal.h; sourceTree = "<group>"; };
 		B242FAC019A599CD0097ECAE /* BFMeasurementEvent_Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFMeasurementEvent_Internal.h; sourceTree = "<group>"; };
-		BF760D2F1C7B74AD00E68921 /* BFURLOpeningHacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFURLOpeningHacks.h; sourceTree = "<group>"; };
+		BF760D371C7B79AC00E68921 /* BFURLOpeningHacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BFURLOpeningHacks.h; path = iOS/BFURLOpeningHacks.h; sourceTree = "<group>"; };
 		F5AFCA021BA752750076E927 /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5AFCA131BA752770076E927 /* BoltsTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BoltsTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5AFCA151BA752AF0076E927 /* Bolts-tvOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Bolts-tvOS.xcconfig"; sourceTree = "<group>"; };
@@ -627,12 +627,12 @@
 		8E9C3CEF17DE9DE000427E62 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BF760D371C7B79AC00E68921 /* BFURLOpeningHacks.h */,
 				814916E11AD5D46600EE7C63 /* iOS.modulemap */,
 				8122B2881AA0E8220025C5AF /* iOS-Info.plist */,
 				81F0E88D19E5CB5A00812A88 /* Mac-Info.plist */,
 				F5AFCA181BA753D20076E927 /* tvOS-Info.plist */,
 				8178F99E1BB0F8A600AD289D /* watchOS-Info.plist */,
-				BF760D2F1C7B74AD00E68921 /* BFURLOpeningHacks.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -748,7 +748,7 @@
 				81ED94231BE147CF00795F05 /* BoltsVersion.h in Headers */,
 				81ED943A1BE1481900795F05 /* BFMeasurementEvent_Internal.h in Headers */,
 				81ED943B1BE1481900795F05 /* BFMeasurementEvent.h in Headers */,
-				BF760D301C7B74AD00E68921 /* BFURLOpeningHacks.h in Headers */,
+				BF760D381C7B79AC00E68921 /* BFURLOpeningHacks.h in Headers */,
 				81ED942B1BE1481900795F05 /* BFAppLink_Internal.h in Headers */,
 				81ED94241BE147CF00795F05 /* Bolts.h in Headers */,
 				81ED94251BE147CF00795F05 /* BFCancellationToken.h in Headers */,
