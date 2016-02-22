@@ -17,6 +17,8 @@
 #import "BFTaskCompletionSource.h"
 #import "BFExecutor.h"
 
+#import "BFURLOpeningHacks.h"
+
 // Defines JavaScript to extract app link tags from HTML content
 static NSString *const BFWebViewAppLinkResolverTagExtractionJavaScript = @""
 "(function() {"
@@ -176,7 +178,7 @@ static NSString *const BFWebViewAppLinkResolverShouldFallbackKey = @"should_fall
                                                         MIMEType:response.MIMEType
                                                 textEncodingName:response.textEncodingName
                                                          baseURL:response.URL];
-                                               UIWindow *window = [UIApplication sharedApplication].windows.firstObject;
+                                               UIWindow *window = BF_UIAPP().windows.firstObject;
                                                [window addSubview:webView];
 
                                                return tcs.task;

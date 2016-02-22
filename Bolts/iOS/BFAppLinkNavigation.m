@@ -19,6 +19,8 @@
 #import "BFTask.h"
 #import "BFMeasurementEvent_Internal.h"
 #import "BFAppLink_Internal.h"
+#import "BFURLOpeningHacks.h"
+
 
 FOUNDATION_EXPORT NSString *const BFAppLinkDataParameterName;
 FOUNDATION_EXPORT NSString *const BFAppLinkTargetKeyName;
@@ -109,7 +111,7 @@ static id<BFAppLinkResolving> defaultResolver;
             if (error) {
                 *error = encodingError;
             }
-        } else if ([[UIApplication sharedApplication] openURL:appLinkAppURL]) {
+        } else if (BF_OPEN_URL(appLinkAppURL)) {
             retType = BFAppLinkNavigationTypeApp;
             openedURL = appLinkAppURL;
             break;
@@ -124,7 +126,7 @@ static id<BFAppLinkResolving> defaultResolver;
             if (error) {
                 *error = encodingError;
             }
-        } else if ([[UIApplication sharedApplication] openURL:appLinkBrowserURL]) {
+        } else if (BF_OPEN_URL(appLinkBrowserURL)) {
             // This was a browser navigation.
             retType = BFAppLinkNavigationTypeBrowser;
             openedURL = appLinkBrowserURL;

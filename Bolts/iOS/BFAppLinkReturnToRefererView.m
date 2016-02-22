@@ -13,6 +13,8 @@
 #import "BFAppLink.h"
 #import "BFAppLinkTarget.h"
 
+#import "BFURLOpeningHacks.h"
+
 static const CGFloat BFMarginX = 8.5f;
 static const CGFloat BFMarginY = 8.5f;
 
@@ -141,7 +143,7 @@ static const CGFloat BFCloseButtonHeight = 12.0;
 }
 
 - (CGFloat)statusBarHeight {
-    UIApplication *application = [UIApplication sharedApplication];
+    UIApplication *application = BF_UIAPP();
 
     BOOL include;
     switch (_includeStatusBarInSize) {
